@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
-        btnLogin = findViewById(R.id.button);
+        btnLogin = findViewById(R.id.btnLogin);
 
 
 

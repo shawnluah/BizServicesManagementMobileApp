@@ -48,8 +48,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
-        android:background="@color/deeppink"
         android:text="Login"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:theme="@style/MyButton"/>
 
 </LinearLayout>

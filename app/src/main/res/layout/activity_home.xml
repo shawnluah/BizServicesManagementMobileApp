@@ -16,10 +16,10 @@
         android:layout_marginHorizontal="80dp"
         android:layout_marginTop="200dp"
         android:layout_weight="1"
-        android:background="@color/deeppink"
         android:text="Manage Users"
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:theme="@style/MyButton"/>
 
     <Button
         android:id="@+id/btnMC"
@@ -28,10 +28,10 @@
         android:layout_marginHorizontal="80dp"
         android:layout_marginVertical="20dp"
         android:layout_weight="1"
-        android:background="@color/deeppink"
         android:text="Manage Clients"
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:theme="@style/MyButton"/>
 
     <Button
         android:id="@+id/btnMT"
@@ -40,8 +40,8 @@
         android:layout_marginHorizontal="80dp"
         android:layout_marginBottom="200dp"
         android:layout_weight="1"
-        android:background="@color/deeppink"
         android:text="Manage Tasks"
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:theme="@style/MyButton"/>
 </LinearLayout>
