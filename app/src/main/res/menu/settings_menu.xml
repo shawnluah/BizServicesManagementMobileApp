@@ -4,7 +4,7 @@
     tools:ignore="AlwaysShowAction">
     <item
         android:id="@+id/settingsMenu"
-        android:icon="@drawable/three-bars-icon"
+        android:icon="@drawable/three_bars_icon"
         android:title="Settings"
         app:showAsAction="always" />
 </menu>
