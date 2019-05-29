@@ -1,14 +1,17 @@
 package com.charlottechia.bizservicesmanagementmobileapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
 
                     openUserHomePage();
                 } else {
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getApplicationContext());
+                    etPassword.setText("");
+                    etUsername.setText("");
+
+                    Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -55,4 +60,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent2  = new Intent(getBaseContext(), HomeActivity.class);
         startActivity(intent2);
     }
+
+
 }
