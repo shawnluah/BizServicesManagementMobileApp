@@ -1,6 +1,7 @@
 package com.charlottechia.bizservicesmanagementmobileapp;
 
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
                     openAdminHomePage();
                 } else if ((username.equalsIgnoreCase("169799978")) && (password.equalsIgnoreCase("password"))) {
+
+                    openUserHomePage();
+                } else {
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getApplicationContext());
 
                 }
             }
