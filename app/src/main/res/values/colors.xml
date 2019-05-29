@@ -9,4 +9,6 @@
     <color name="pink">#FFC0CB</color>
     <color name="indigo">#4b0082</color>
     <color name="deeppink">#ff1493</color>
+    <color name="red">#FF0000</color>
+    <color name="lightblue">#1e90ff</color>
 </resources>
