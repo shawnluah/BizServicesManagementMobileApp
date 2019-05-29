@@ -21,6 +21,6 @@ public class TaskUserActivity extends AppCompatActivity {
         tvType = findViewById(R.id.tvID);
         tvDueDate = findViewById(R.id.tvID);
         btnDetails = findViewById(R.id.btnDetails);
-        
+
     }
 }
