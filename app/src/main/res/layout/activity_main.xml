@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/fyp_company_logo" />
 
     <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/etContactPerson"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
@@ -32,7 +32,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etSecretary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"

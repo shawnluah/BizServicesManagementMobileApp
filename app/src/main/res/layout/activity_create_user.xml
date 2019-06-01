@@ -98,8 +98,8 @@
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
-            android:hint=" Contact"
-            android:inputType="textPersonName" />
+            android:hint=" Contact Number"
+            android:inputType="phone" />
     </LinearLayout>
 
     <LinearLayout
@@ -146,7 +146,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etUsername"
+            android:id="@+id/etContactPerson"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -173,7 +173,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etSecretary"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
