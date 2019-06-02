@@ -1,7 +1,9 @@
 package com.charlottechia.bizservicesmanagementmobileapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,27 +23,32 @@ public class TaskAdminActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_admin);
 
-      //  tvTaskID = findViewById(R.id.textView16);
-      // tvTaskName = findViewById(R.id.textView19);
-       // tvType = findViewById(R.id.textView115);
-      //   tvDueDate = findViewById(R.id.tvDueDate2);
-      // btnEditTask = findViewById(R.id.btnEditTask);
-      // btnDetailsTask = findViewById(R.id.btnDetailsAdmin2);
+
+        ivTask = findViewById(R.id.imgBtnTaskAdd);
+        btnDetailsTask = findViewById(R.id.btnEditTask);
+        btnEditTask = findViewById(R.id.btnDetailsAdmin2);
 
 
-      //  ibtnCreateTask.setOnClickListener(new View.OnClickListener() {
-       //     @Override
-        //    public void onClick(View view) {
-       //         OpenCreateTaskActivity();
-       //     }
-      //  });
-
-
+        ivTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreateTask();
+            }
+        });
+        btnEditTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEditTask();
+            }
+        });
     }
 
-   // public  void openCreateTaskActivity(){
-   //    Intent intent = new Intent(getBaseContext(),CreateTaskActivity.class);
-    //    startActivity(intent);
-   // }
-
+    public void openCreateTask () {
+        Intent intent  = new Intent(getBaseContext(), CreateTaskActivity.class);
+        startActivity(intent);
+    }
+    public void openEditTask () {
+        Intent intent  = new Intent(getBaseContext(), EditTaskActivity.class);
+        startActivity(intent);
+    }
 }
