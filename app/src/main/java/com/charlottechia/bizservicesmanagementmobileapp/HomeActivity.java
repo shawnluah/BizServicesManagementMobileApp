@@ -35,8 +35,19 @@ public class HomeActivity extends AppCompatActivity {
                 openCreateUser();
             }
         });
+        btnMT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAdminTaskRow();
+            }
+        });
     }
 
+
+    public void openAdminTaskRow () {
+        Intent intent  = new Intent(getBaseContext(), TaskAdminActivity.class);
+        startActivity(intent);
+    }
 
     public void openCreateClient () {
         Intent intent  = new Intent(getBaseContext(), CreateClientActivity.class);
