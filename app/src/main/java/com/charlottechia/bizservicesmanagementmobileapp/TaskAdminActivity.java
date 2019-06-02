@@ -21,7 +21,7 @@ public class TaskAdminActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_admin);
+        setContentView(R.layout.admintaskrow);
 
      //   tvTaskID = findViewById(R.id.tvTaskID);
      //   tvTaskName = findViewById(R.id.tvTaskName);

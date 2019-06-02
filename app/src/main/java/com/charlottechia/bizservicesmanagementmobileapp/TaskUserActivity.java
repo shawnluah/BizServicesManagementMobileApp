@@ -14,7 +14,7 @@ public class TaskUserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_user);
+        setContentView(R.layout.usertaskrow);
 
         tvID = findViewById(R.id.tvTaskID);
         tvName = findViewById(R.id.tvTaskName);
