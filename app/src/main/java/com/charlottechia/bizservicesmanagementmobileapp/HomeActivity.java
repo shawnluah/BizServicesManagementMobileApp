@@ -26,13 +26,13 @@ public class HomeActivity extends AppCompatActivity {
         btnMC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openCreateClient();
+                openClientAdmin();
             }
         });
         btnMU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openCreateUser();
+                openUserAdmin();
             }
         });
         btnMT.setOnClickListener(new View.OnClickListener() {
@@ -49,12 +49,12 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openCreateClient () {
-        Intent intent  = new Intent(getBaseContext(), CreateClientActivity.class);
+    public void openClientAdmin () {
+        Intent intent  = new Intent(getBaseContext(), ClientAdminActivity.class);
         startActivity(intent);
     }
-    public void openCreateUser () {
-        Intent intent  = new Intent(getBaseContext(), CreateUserActivity.class);
+    public void openUserAdmin () {
+        Intent intent  = new Intent(getBaseContext(), UserAdminActivity.class);
         startActivity(intent);
     }
 //    @Override
