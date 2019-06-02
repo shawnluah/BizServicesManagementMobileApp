@@ -14,13 +14,13 @@ public class TaskUserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_user);
+        setContentView(R.layout.usertaskrow);
 
-        tvID = findViewById(R.id.tvID);
-        tvName = findViewById(R.id.tvID);
-        tvType = findViewById(R.id.tvID);
-        tvDueDate = findViewById(R.id.tvID);
-        btnDetails = findViewById(R.id.btnDetails);
+        tvID = findViewById(R.id.tvTaskID2);
+        tvName = findViewById(R.id.tvTaskName);
+        tvType = findViewById(R.id.tvType2);
+        tvDueDate = findViewById(R.id.tvDueDate2);
+        btnDetails = findViewById(R.id.btnDetailsAdmin2);
 
     }
 }
