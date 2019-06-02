@@ -20,7 +20,7 @@ public class TaskUserActivity extends AppCompatActivity {
         tvName = findViewById(R.id.tvTaskName);
         tvType = findViewById(R.id.tvType);
         tvDueDate = findViewById(R.id.tvDueDate);
-        btnDetails = findViewById(R.id.btnDetails);
+        btnDetails = findViewById(R.id.btnDetailsAdmin);
 
     }
 }
