@@ -13,6 +13,7 @@ public class TaskAdminActivity extends AppCompatActivity {
     TextView tvTaskID;
     TextView tvTaskName;
     TextView tvType;
+    TextView tvDueDate;
     Button btnEditTask;
     Button btnDetailsTask;
     ImageButton ibtnCreateTask;
@@ -25,6 +26,7 @@ public class TaskAdminActivity extends AppCompatActivity {
      //   tvTaskID = findViewById(R.id.tvTaskID);
      //   tvTaskName = findViewById(R.id.tvTaskName);
      //   tvType = findViewById(R.id.tvType);
+        // tvDueDate = findViewById(R.id.tvDueDate);
      //   btnEditTask = findViewById(R.id.btnEditTask);
      //   btnDetailsTask = findViewById(R.id.btnDetailsTask);
      //   ibtnCreateTask = findViewById(R.id.ibtnCreateTask);
