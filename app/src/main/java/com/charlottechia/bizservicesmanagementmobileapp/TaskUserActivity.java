@@ -16,11 +16,11 @@ public class TaskUserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.usertaskrow);
 
-        tvID = findViewById(R.id.tvTaskID);
+        tvID = findViewById(R.id.tvTaskID2);
         tvName = findViewById(R.id.tvTaskName);
-        tvType = findViewById(R.id.tvType);
-        tvDueDate = findViewById(R.id.tvDueDate);
-        btnDetails = findViewById(R.id.btnDetailsAdmin);
+        tvType = findViewById(R.id.tvType2);
+        tvDueDate = findViewById(R.id.tvDueDate2);
+        btnDetails = findViewById(R.id.btnDetailsAdmin2);
 
     }
 }
