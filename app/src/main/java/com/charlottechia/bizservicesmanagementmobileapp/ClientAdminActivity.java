@@ -22,8 +22,8 @@ public class ClientAdminActivity extends AppCompatActivity {
         setContentView(R.layout.activity_client_admin);
 
         ivAdd = findViewById(R.id.imageView);
-        btnEdit = findViewById(R.id.btnEditAdminClient);
-        btnDetails = findViewById(R.id.btnDetailsAdminClient);
+        btnEdit = findViewById(R.id.btnEditAdminUser);
+        btnDetails = findViewById(R.id.btnDetailsAdminUser);
 
         ivAdd.setOnClickListener(new View.OnClickListener() {
             @Override
