@@ -50,12 +50,12 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openClientAdmin () {
-        Intent intent  = new Intent(getBaseContext(), ClientAdminActivity.class);
-        startActivity(intent);
+        Intent intent2  = new Intent(getBaseContext(), ClientAdminActivity.class);
+        startActivity(intent2);
     }
     public void openUserAdmin () {
-        Intent intent  = new Intent(getBaseContext(), UserAdminActivity.class);
-        startActivity(intent);
+        Intent intent3  = new Intent(getBaseContext(), UserAdminActivity.class);
+        startActivity(intent3);
     }
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
