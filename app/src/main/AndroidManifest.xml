@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".EditTaskActivity"></activity>
-        <activity android:name=".EditClientActivity" />
-        <activity android:name=".CreateClientActivity" />
-        <activity android:name=".CreateUserActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".EditClientActivity"></activity>
+        <activity android:name=".EditUserActivity" ></activity>
+        <activity android:name=".CreateClientActivity"></activity>
+        <activity android:name=".CreateUserActivity" ></activity>
+        <activity android:name=".CreateTaskActivity" ></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".UserAdminActivity" ></activity>
+        <activity android:name=".ClientAdminActivity" ></activity>
+        <activity android:name=".TaskAdminActivity" ></activity>
+        <activity android:name=".TaskUserActivity" ></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
