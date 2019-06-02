@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etUsername = findViewById(R.id.etContactPCreateClient);
-        etPassword = findViewById(R.id.etSecretaryCreateClient);
+        etUsername = findViewById(R.id.etUsernameCreateUser);
+        etPassword = findViewById(R.id.etPasswordCreateUser);
         btnLogin = findViewById(R.id.btnLogin);
 
 

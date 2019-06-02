@@ -29,7 +29,7 @@
         android:layout_marginBottom="25dp">
 
         <TextView
-            android:id="@+id/tvNameCreateClient"
+            android:id="@+id/tvNameEditUser"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -38,7 +38,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etNameCreateClient"
+            android:id="@+id/etNameCreateCreateUser"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -56,7 +56,7 @@
         android:layout_marginBottom="25dp">
 
         <TextView
-            android:id="@+id/tvIDCreateClient"
+            android:id="@+id/tvIDCreateCreateUser"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -65,7 +65,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etIDCreateClient"
+            android:id="@+id/etIDCreateCreateUser"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -84,7 +84,7 @@
         android:layout_marginBottom="25dp">
 
         <TextView
-            android:id="@+id/tvContactCreateClient"
+            android:id="@+id/tvContactCreateCreateUser"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -93,7 +93,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etContactCreateClient"
+            android:id="@+id/etContactCreateCreateUser"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -111,7 +111,7 @@
         android:layout_marginBottom="25dp">
 
         <TextView
-            android:id="@+id/tvEmailCreateClient"
+            android:id="@+id/tvEmailCreateCreateUser"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -120,7 +120,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etEmailCreateClient"
+            android:id="@+id/etEmailCreateCreateUser"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -138,7 +138,7 @@
         android:layout_marginBottom="25dp">
 
         <TextView
-            android:id="@+id/tvCpersonCreateClient"
+            android:id="@+id/tvUsernameCreateCreateUser"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -147,7 +147,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etContactPCreateClient"
+            android:id="@+id/etUsernameCreateUser"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -165,7 +165,7 @@
         android:layout_marginBottom="25dp">
 
         <TextView
-            android:id="@+id/tvSecretaryCreateClient"
+            android:id="@+id/tvPasswordCreateCreateUser"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -174,7 +174,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etSecretaryCreateClient"
+            android:id="@+id/etPasswordCreateUser"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -207,7 +207,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rbStaff"
+                android:id="@+id/rbStaffCreateCreateUser"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -216,7 +216,7 @@
                 android:layout_marginRight="10dp"/>
 
             <RadioButton
-                android:id="@+id/rbAdmin"
+                android:id="@+id/rbAdminCreateCreateUser"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -233,7 +233,7 @@
         android:layout_marginBottom="50dp">
 
         <TextView
-            android:id="@+id/tv"
+            android:id="@+id/tvStatusCreateCreateUser"
             android:layout_width="25dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -242,13 +242,13 @@
             android:textSize="18sp" />
 
         <RadioGroup
-            android:id="@+id/rgStatus"
+            android:id="@+id/rgStatusCreateUser"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rbActive"
+                android:id="@+id/rbActiveCreateCreateUser"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -257,7 +257,7 @@
                 android:layout_marginRight="10dp"/>
 
             <RadioButton
-                android:id="@+id/rbFrozen"
+                android:id="@+id/rbFrozenCreateCreateUser"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -273,7 +273,7 @@
         android:layout_marginHorizontal="20dp">
 
         <Button
-            android:id="@+id/btnDelete"
+            android:id="@+id/btnDeleteEditUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -283,7 +283,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btnSave"
+            android:id="@+id/btnSaveCreateCreateUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -293,7 +293,7 @@
             android:theme="@style/MyButton" />
 
         <Button
-            android:id="@+id/btnCancel"
+            android:id="@+id/btnCancelCreateCreateUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

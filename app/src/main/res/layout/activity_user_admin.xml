@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tvClientAdmin"
+            android:id="@+id/tvUserAdmin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -23,7 +23,7 @@
             android:textColor="@color/white" />
 
         <ImageView
-            android:id="@+id/ivAddClient"
+            android:id="@+id/ivAddUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -42,14 +42,14 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvIDAdminClient"
+                android:id="@+id/tvIDAdminUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/tvNameAdminClient"
+                android:id="@+id/tvNameAdminUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -65,7 +65,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/tvStatusAdminClient"
+                android:id="@+id/tvStatusAdminUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
@@ -78,13 +78,13 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btnEditAdminClient"
+                android:id="@+id/btnEditAdminUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Edit" />
 
             <Button
-                android:id="@+id/btnDetailsAdminClient"
+                android:id="@+id/btnDetailsAdminUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Details" />
