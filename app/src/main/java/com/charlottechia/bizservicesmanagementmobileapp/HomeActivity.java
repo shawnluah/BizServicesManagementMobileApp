@@ -45,32 +45,18 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    public void openAdminTaskRow () {
+    public void openAdminTaskRow() {
         Intent intent  = new Intent(getBaseContext(), TaskAdminActivity.class);
         startActivity(intent);
     }
 
-    public void openClientAdmin () {
+    public void openClientAdmin() {
         Intent intent2  = new Intent(getBaseContext(), ClientAdminActivity.class);
         startActivity(intent2);
     }
-    public void openUserAdmin () {
+    public void openUserAdmin() {
         Intent intent3  = new Intent(getBaseContext(), UserAdminActivity.class);
         startActivity(intent3);
     }
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.settings_menu, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-////        if (item.getItemId()) {
-////            //Do your stuff here
-////            return true;
-////        }
-//        return super.onOptionsItemSelected(item);
-//    }
+
 }

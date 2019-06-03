@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 if ((username.equalsIgnoreCase("1")) && (password.equalsIgnoreCase("password"))) {
 
                     openAdminHomePage();
-                } else if ((username.equalsIgnoreCase("169799978")) && (password.equalsIgnoreCase("password"))) {
+                } else if ((username.equalsIgnoreCase("2")) && (password.equalsIgnoreCase("password"))) {
 
                     openTaskUserPage();
                 } else {
