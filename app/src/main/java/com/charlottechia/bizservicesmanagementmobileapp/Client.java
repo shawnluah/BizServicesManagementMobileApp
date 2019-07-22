@@ -3,9 +3,9 @@ package com.charlottechia.bizservicesmanagementmobileapp;
 import java.util.Date;
 
 public class Client {
-    private Integer id;
+    private int id;
     private String name;
-    private Integer contact;
+    private int contact;
     private String email;
     private String contactPerson;
     private String secretary;
@@ -16,7 +16,7 @@ public class Client {
     private String shareholder1;
     private String shareholder2;
 
-    public Client(Integer id, String name, Integer contact, String email, String contactPerson, String secretary, Date endDate, String director1, String director2, String director3, String shareholder1, String shareholder2) {
+    public Client(int id, String name, int contact, String email, String contactPerson, String secretary, Date endDate, String director1, String director2, String director3, String shareholder1, String shareholder2) {
         this.id = id;
         this.name = name;
         this.contact = contact;
@@ -31,11 +31,11 @@ public class Client {
         this.shareholder2 = shareholder2;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -47,11 +47,11 @@ public class Client {
         this.name = name;
     }
 
-    public Integer getContact() {
+    public int getContact() {
         return contact;
     }
 
-    public void setContact(Integer contact) {
+    public void setContact(int contact) {
         this.contact = contact;
     }
 
