@@ -1,17 +1,16 @@
 package com.charlottechia.bizservicesmanagementmobileapp;
 
-public class User {
+public class User  {
 
     private String name;
     private Integer id;
     private Integer contact;
     private String email;
     private String username;
-    private Integer password;
-    private Boolean role;
-    private Boolean status;
+    private String password;
+    private  String role;
 
-    public User(String name, Integer id, Integer contact, String email, String username, Integer password, Boolean role, Boolean status) {
+    public User(String name, Integer id, Integer contact, String email, String username, String password,String role) {
         this.name = name;
         this.id = id;
         this.contact = contact;
@@ -19,7 +18,6 @@ public class User {
         this.username = username;
         this.password = password;
         this.role = role;
-        this.status = status;
     }
 
     public String getUserName() {
@@ -42,16 +40,29 @@ public class User {
         return username;
     }
 
-    public Integer getUserPassword() {
+    public String getUserPassword() {
         return password;
     }
 
-    public Boolean getUserRole() {
+    public String getRole() {
         return role;
     }
 
-    public Boolean getUserStatus() {
-        return status;
+    public void setRole(String role) {
+        this.role = role;
     }
 
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", contact=" + contact +
+                ", email='" + email + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                '}';
+    }
 }

@@ -17,15 +17,9 @@ public class UserAdminActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_admin);
+        setContentView(R.layout.activity_admin_user);
 
         ivAddUser = findViewById(R.id.ivAddUser);
-        tvIDAdminUser = findViewById(R.id.tvIDAdminUser);
-        tvNameAdminuser = findViewById(R.id.tvNameAdminUser);
-        tvStatusAdminuser = findViewById(R.id.tvStatusAdminUser);
-        btnEditAdminuser = findViewById(R.id.btnEditAdminUser);
-        btnDetailsAdminUser = findViewById(R.id.btnDetailsAdminUser);
-
         ivAddUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,12 +27,7 @@ public class UserAdminActivity extends AppCompatActivity {
             }
         });
 
-        btnEditAdminuser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openEditUser();
-            }
-        });
+
 
     }
 

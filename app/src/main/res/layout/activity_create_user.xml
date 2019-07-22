@@ -18,6 +18,7 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:gravity="center"
         android:layout_margin="30dp"/>
 
     <LinearLayout
@@ -39,7 +40,7 @@
         <EditText
             android:id="@+id/etNameCreateCreateUser"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -66,7 +67,7 @@
         <EditText
             android:id="@+id/etIDCreateCreateUser"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -94,7 +95,7 @@
         <EditText
             android:id="@+id/etContactCreateCreateUser"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -121,7 +122,7 @@
         <EditText
             android:id="@+id/etEmailCreateCreateUser"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -148,7 +149,7 @@
         <EditText
             android:id="@+id/etUsernameCreateCreateUser"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -175,7 +176,7 @@
         <EditText
             android:id="@+id/etPasswordCreateCreateUser"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -228,47 +229,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="50dp">
-
-        <TextView
-            android:id="@+id/tvStatusCreateCreateUser"
-            android:layout_width="25dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Status"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/rgStatusCreateUser"
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbActiveCreateCreateUser"
-                android:layout_width="75dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Active"
-                android:textColor="@color/white"
-                android:layout_marginRight="10dp"/>
-
-            <RadioButton
-                android:id="@+id/rbFrozenCreateCreateUser"
-                android:layout_width="75dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Frozen"
-                android:textColor="@color/white" />
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginHorizontal="20dp">
 
         <Button
@@ -278,8 +238,14 @@
             android:layout_weight="1"
             android:text="Save"
             android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
             android:textSize="18sp"
             android:theme="@style/MyButton" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/btnCancelCreateCreateUser"
@@ -289,6 +255,7 @@
             android:text="@android:string/cancel"
             android:textColor="@color/white"
             android:textSize="18sp"
+            android:background="@drawable/rounded_button"
             android:theme="@style/MyButton" />
     </LinearLayout>
 

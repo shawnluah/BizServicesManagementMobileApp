@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class ClientAdminActivity extends AppCompatActivity {
 
     ImageView ivAdd;
@@ -19,11 +17,10 @@ public class ClientAdminActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_client_admin);
+        setContentView(R.layout.activity_admin_client);
 
         ivAdd = findViewById(R.id.imageView);
-        btnEdit = findViewById(R.id.btnEditAdminUser);
-        btnDetails = findViewById(R.id.btnDetailsAdminUser);
+
 
         ivAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,12 +29,7 @@ public class ClientAdminActivity extends AppCompatActivity {
             }
         });
 
-        btnEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEditClientPage();
-            }
-        });
+
 
     }
     public void openEditClientPage () {

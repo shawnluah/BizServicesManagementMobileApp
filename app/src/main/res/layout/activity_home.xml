@@ -6,42 +6,53 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blue"
-    tools:context=".HomeActivity"
-    android:gravity="center">
+    tools:context=".HomeActivity">
 
-
-    <Button
-        android:id="@+id/btnMU"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="80dp"
-        android:layout_weight="0"
-        android:text="Manage Users"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:theme="@style/MyButton"
-        />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnMC"
+        <Button
+            android:id="@+id/btnMU"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="MANAGE USER"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="80dp"
-        android:layout_marginVertical="20dp"
-        android:layout_weight="0"
-        android:text="Manage Clients"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:theme="@style/MyButton" />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnMT"
+        <Button
+            android:id="@+id/btnMC"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="MANAGE CLIENT"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="80dp"
-        android:layout_weight="0"
-        android:text="Manage Tasks"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:theme="@style/MyButton" />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMT"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="MANAGE TASK"
+            android:textColor="@color/white" />
+    </LinearLayout>
 </LinearLayout>

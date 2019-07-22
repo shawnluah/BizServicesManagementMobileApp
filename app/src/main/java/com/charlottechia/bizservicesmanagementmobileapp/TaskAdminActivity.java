@@ -16,29 +16,22 @@ public class TaskAdminActivity extends AppCompatActivity {
     TextView tvDueDate;
     Button btnEditTask;
     Button btnDetailsTask;
-    ImageView ivTask;
+    ImageView ivAddTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_admin);
+        setContentView(R.layout.activity_admin_task);
 
 
-        ivTask = findViewById(R.id.imgBtnTaskAdd);
-        btnDetailsTask = findViewById(R.id.btnDetailsAdmin2);
-        btnEditTask = findViewById(R.id.btnEditTask);
+        ivAddTask = findViewById(R.id.imgBtnTaskAdd);
 
 
-        ivTask.setOnClickListener(new View.OnClickListener() {
+
+        ivAddTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCreateTask();
-            }
-        });
-        btnEditTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEditTask();
             }
         });
     }

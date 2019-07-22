@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     openAdminHomePage();
                 } else if ((username.equalsIgnoreCase("2")) && (password.equalsIgnoreCase("password"))) {
 
-                    openTaskUserPage();
+                //    openTaskUserPage();
                 } else {
                     etPassword.setText("");
                     etUsername.setText("");
@@ -51,10 +51,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent  = new Intent(getBaseContext(), HomeActivity.class);
         startActivity(intent);
     }
-    public void openTaskUserPage () {
-        Intent intent2  = new Intent(getBaseContext(), TaskUserActivity.class);
-        startActivity(intent2);
-    }
+
+   // public void openTaskUserPage () {
+   //     Intent intent2  = new Intent(getBaseContext(), TaskUserActivity.class);
+    //    startActivity(intent2);
+   // }
 
 
 }

@@ -2,18 +2,18 @@ package com.charlottechia.bizservicesmanagementmobileapp;
 
 public class Task {
     private String name;
-    private Integer id;
+    private int id;
     private String userInCharge;
-    private Integer percentOfUIC;
+    private float percentOfUIC;
     private String Liaison;
-    private Integer percentOfLiaison;
+    private float percentOfLiaison;
     private String client;
-    private Integer price;
-    private String dueDate;
-    private Boolean status;
+    private float price;
+    private boolean complete;
     private String type;
 
-    public Task(String name, Integer id, String userInCharge, Integer percentOfUIC, String liaison, Integer percentOfLiaison, String client, Integer price, String dueDate, Boolean status, String type) {
+
+    public Task(String name, int id, String userInCharge, float percentOfUIC, String liaison, float percentOfLiaison, String client, float price, boolean complete, String type) {
         this.name = name;
         this.id = id;
         this.userInCharge = userInCharge;
@@ -22,54 +22,89 @@ public class Task {
         this.percentOfLiaison = percentOfLiaison;
         this.client = client;
         this.price = price;
-        this.dueDate = dueDate;
-        this.status = status;
+        this.complete = complete;
         this.type = type;
-
-
     }
 
-    public String getTaskName() {
+    public String getName() {
         return name;
     }
 
-    public Integer getTaskId() {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public String getTaskUserInCharge() {
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUserInCharge() {
         return userInCharge;
     }
 
-    public Integer getTaskPercentOfUIC() {
+    public void setUserInCharge(String userInCharge) {
+        this.userInCharge = userInCharge;
+    }
+
+    public float getPercentOfUIC() {
         return percentOfUIC;
     }
 
-    public String getTaskLiaison() {
+    public void setPercentOfUIC(float percentOfUIC) {
+        this.percentOfUIC = percentOfUIC;
+    }
+
+    public String getLiaison() {
         return Liaison;
     }
 
-    public Integer getTaskPercentOfLiaison() {
+    public void setLiaison(String liaison) {
+        Liaison = liaison;
+    }
+
+    public float getPercentOfLiaison() {
         return percentOfLiaison;
     }
 
-    public String getTaskClient() {
+    public void setPercentOfLiaison(float percentOfLiaison) {
+        this.percentOfLiaison = percentOfLiaison;
+    }
+
+    public String getClient() {
         return client;
     }
 
-    public Integer getTaskPrice() {
+    public void setClient(String client) {
+        this.client = client;
+    }
+
+    public float getPrice() {
         return price;
     }
 
-    public String getTaskDueDate() {
-        return dueDate;
+    public void setPrice(float price) {
+        this.price = price;
     }
 
-    public Boolean getTaskStatus() {
-        return status;
+    public boolean isComplete() {
+        return complete;
     }
 
-    public String getTaskType() {
+    public void setComplete(boolean complete) {
+        this.complete = complete;
+    }
+
+    public String getType() {
         return type;
     }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+
 }

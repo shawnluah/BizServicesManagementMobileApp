@@ -16,6 +16,7 @@
         android:text="Create Task"
         android:textAllCaps="true"
         android:textColor="@color/white"
+        android:gravity="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -38,7 +39,7 @@
         <EditText
             android:id="@+id/etName"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -65,7 +66,7 @@
         <EditText
             android:id="@+id/etID"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -94,7 +95,7 @@
         <EditText
             android:id="@+id/etUIC"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -122,7 +123,7 @@
         <EditText
             android:id="@+id/etUICPercent"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -150,7 +151,7 @@
         <EditText
             android:id="@+id/etLiaison"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -177,7 +178,7 @@
         <EditText
             android:id="@+id/etPercentLP"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -204,7 +205,7 @@
         <EditText
             android:id="@+id/etClient"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -231,7 +232,7 @@
         <EditText
             android:id="@+id/etPrice"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
@@ -258,43 +259,12 @@
         <EditText
             android:id="@+id/etDueDate"
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
             android:ems="10"
             android:hint=" Due Date"
             android:inputType="date" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal"
-        android:layout_marginBottom="25dp">
-
-        <Switch
-            android:id="@+id/swCompleted"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:text="Completed"
-            android:textColor="@color/white"
-            android:textOff="No"
-            android:textOn="Yes"
-            android:textSize="18sp" />
-
-        <Switch
-            android:id="@+id/swBilled"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Billed"
-            android:textColor="@color/white"
-            android:textOff="No"
-            android:textOn="Yes"
-            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -334,8 +304,14 @@
             android:layout_weight="1"
             android:text="Save"
             android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
             android:textSize="18sp"
             android:theme="@style/MyButton" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/btnCancelCreateCreateUser"
@@ -344,6 +320,7 @@
             android:layout_weight="1"
             android:text="@android:string/cancel"
             android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
             android:textSize="18sp"
             android:theme="@style/MyButton" />
     </LinearLayout>
