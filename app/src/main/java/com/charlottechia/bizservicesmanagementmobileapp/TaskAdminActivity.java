@@ -25,8 +25,8 @@ public class TaskAdminActivity extends AppCompatActivity {
 
 
         ivTask = findViewById(R.id.imgBtnTaskAdd);
-        btnDetailsTask = findViewById(R.id.btnEditTask);
-        btnEditTask = findViewById(R.id.btnDetailsAdmin2);
+        btnDetailsTask = findViewById(R.id.btnDetailsAdmin2);
+        btnEditTask = findViewById(R.id.btnEditTask);
 
 
         ivTask.setOnClickListener(new View.OnClickListener() {
