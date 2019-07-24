@@ -18,7 +18,7 @@ public class UserAdapter extends ArrayAdapter<User> {
     private ArrayList<User> alUser;
     private Context context;
     private TextView tvNameUser, tvIDUser, tvStatusUser;
-    private Button btnEditUser;
+
 
     public UserAdapter( Context context, int resource,ArrayList<User> objects) {
         super(context, resource,objects);
@@ -35,20 +35,13 @@ public class UserAdapter extends ArrayAdapter<User> {
         tvNameUser = (TextView) rowView.findViewById(R.id.tvNameUser);
         tvIDUser = (TextView) rowView.findViewById(R.id.tvIDUser);
         tvStatusUser = (TextView) rowView.findViewById(R.id.tvStatusUser);
-        btnEditUser = (Button) rowView.findViewById(R.id.btnEditUserDetails);
 
-        btnEditUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
 
         User user = alUser.get(position);
 
 
         tvNameUser.setText(user.getUserName());
-        tvIDUser.setText(user.getUserId());
+        tvIDUser.setText(user.getUserId().toString());
 
         return rowView;
 
