@@ -9,14 +9,16 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class UserAdapter extends ArrayAdapter<User> {
 
-    public static final String LOG_TAG = UserAdapter.class.getName();
-
     private ArrayList<User> alUser;
     private Context context;
+    private TextView tvNameUser, tvIDUser, tvStatusUser;
+    private Button btnEditUser;
 
     public UserAdapter( Context context, int resource,ArrayList<User> objects) {
         super(context, resource,objects);
@@ -30,11 +32,12 @@ public class UserAdapter extends ArrayAdapter<User> {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.customuser, parent, false);
 
-        TextView tvName = (TextView) rowView.findViewById(R.id.tvNameUser);
-        TextView tvID = (TextView) rowView.findViewById(R.id.tvIDUser);
-        Button btnEdit = (Button) rowView.findViewById(R.id.btnEditUserDetails);
+        tvNameUser = (TextView) rowView.findViewById(R.id.tvNameUser);
+        tvIDUser = (TextView) rowView.findViewById(R.id.tvIDUser);
+        tvStatusUser = (TextView) rowView.findViewById(R.id.tvStatusUser);
+        btnEditUser = (Button) rowView.findViewById(R.id.btnEditUserDetails);
 
-        btnEdit.setOnClickListener(new View.OnClickListener() {
+        btnEditUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -43,8 +46,9 @@ public class UserAdapter extends ArrayAdapter<User> {
 
         User user = alUser.get(position);
 
-        tvName.setText(user.getUserName());
-        tvID.setText(user.getUserId());
+
+        tvNameUser.setText(user.getUserName());
+        tvIDUser.setText(user.getUserId());
 
         return rowView;
 
