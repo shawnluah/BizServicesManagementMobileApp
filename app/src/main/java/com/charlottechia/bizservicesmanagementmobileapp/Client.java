@@ -15,8 +15,9 @@ public class Client {
     private String director3;
     private String shareholder1;
     private String shareholder2;
+    private Boolean clientStatus;
 
-    public Client(Integer id, String name, Integer contact, String email, String contactPerson, String secretary, String endDate, String director1, String director2, String director3, String shareholder1, String shareholder2) {
+    public Client(Integer id, String name, Integer contact, String email, String contactPerson, String secretary, String endDate, String director1, String director2, String director3, String shareholder1, String shareholder2, Boolean clientStatus) {
         this.id = id;
         this.name = name;
         this.contact = contact;
@@ -29,6 +30,15 @@ public class Client {
         this.director3 = director3;
         this.shareholder1 = shareholder1;
         this.shareholder2 = shareholder2;
+        this.clientStatus = clientStatus;
+    }
+
+    public Boolean getClientStatus() {
+        return clientStatus;
+    }
+
+    public void setClientStatus(Boolean clientStatus) {
+        this.clientStatus = clientStatus;
     }
 
     public Integer getClientId() {

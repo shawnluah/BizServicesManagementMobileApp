@@ -14,7 +14,7 @@ public class ClientAdapter extends ArrayAdapter<Client> {
     private Context context;
     private TextView tvNameClient, tvIDClient, tvStatusClient;
 
-    public ClientAdapter( Context context, int resource,ArrayList<Client> objects) {
+    public ClientAdapter( Context context, int resource, ArrayList<Client> objects) {
         super(context, resource,objects);
         alClient = objects;
         this.context = context;
@@ -30,11 +30,12 @@ public class ClientAdapter extends ArrayAdapter<Client> {
         tvStatusClient = rowView.findViewById(R.id.tvStatusClient);
 
 
-        Client client = alClient.get(position);
+        Client clients = alClient.get(position);
 
 
-        tvNameClient.setText(client.getClientName());
-        tvIDClient.setText(client.getClientId().toString());
+        tvNameClient.setText(clients.getClientName());
+        tvIDClient.setText(clients.getClientId().toString());
+        tvStatusClient.setText("");
 
         return rowView;
 

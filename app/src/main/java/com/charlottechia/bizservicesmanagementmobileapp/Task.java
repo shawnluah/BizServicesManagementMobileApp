@@ -11,9 +11,10 @@ public class Task {
     private Double price;
     private boolean complete;
     private String type;
+    private boolean billed;
 
 
-    public Task(String name, Integer id, String userInCharge, Double percentOfUIC, String liaison, Double percentOfLiaison, String client, Double price, boolean complete, String type) {
+    public Task(String name, Integer id, String userInCharge, Double percentOfUIC, String liaison, Double percentOfLiaison, String client, Double price, boolean complete, String type, Boolean billed) {
         this.name = name;
         this.id = id;
         this.userInCharge = userInCharge;
@@ -24,6 +25,15 @@ public class Task {
         this.price = price;
         this.complete = complete;
         this.type = type;
+        this.billed = billed;
+    }
+
+    public boolean isBilled() {
+        return billed;
+    }
+
+    public void setBilled(boolean billed) {
+        this.billed = billed;
     }
 
     public String getTaskName() {

@@ -42,6 +42,12 @@ public class UserAdapter extends ArrayAdapter<User> {
 
         tvNameUser.setText(user.getUserName());
         tvIDUser.setText(user.getUserId().toString());
+        if (user.getStatus() == true) {
+            tvStatusUser.setText("Active");
+        } else {
+            tvStatusUser.setText("Inactive");
+        }
+
 
         return rowView;
 
