@@ -2,18 +2,18 @@ package com.charlottechia.bizservicesmanagementmobileapp;
 
 public class Task {
     private String name;
-    private int id;
+    private Integer id;
     private String userInCharge;
-    private float percentOfUIC;
+    private Double percentOfUIC;
     private String Liaison;
-    private float percentOfLiaison;
+    private Double percentOfLiaison;
     private String client;
-    private float price;
+    private Double price;
     private boolean complete;
     private String type;
 
 
-    public Task(String name, int id, String userInCharge, float percentOfUIC, String liaison, float percentOfLiaison, String client, float price, boolean complete, String type) {
+    public Task(String name, Integer id, String userInCharge, Double percentOfUIC, String liaison, Double percentOfLiaison, String client, Double price, boolean complete, String type) {
         this.name = name;
         this.id = id;
         this.userInCharge = userInCharge;
@@ -26,19 +26,19 @@ public class Task {
         this.type = type;
     }
 
-    public String getName() {
+    public String getTaskName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setTaskName(String name) {
         this.name = name;
     }
 
-    public int getId() {
+    public Integer getTaskId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setTaskId(Integer id) {
         this.id = id;
     }
 
@@ -50,11 +50,11 @@ public class Task {
         this.userInCharge = userInCharge;
     }
 
-    public float getPercentOfUIC() {
+    public Double getPercentOfUIC() {
         return percentOfUIC;
     }
 
-    public void setPercentOfUIC(float percentOfUIC) {
+    public void setPercentOfUIC(Double percentOfUIC) {
         this.percentOfUIC = percentOfUIC;
     }
 
@@ -66,27 +66,27 @@ public class Task {
         Liaison = liaison;
     }
 
-    public float getPercentOfLiaison() {
+    public Double getPercentOfLiaison() {
         return percentOfLiaison;
     }
 
-    public void setPercentOfLiaison(float percentOfLiaison) {
+    public void setPercentOfLiaison(Double percentOfLiaison) {
         this.percentOfLiaison = percentOfLiaison;
     }
 
-    public String getClient() {
+    public String getTaskClient() {
         return client;
     }
 
-    public void setClient(String client) {
+    public void setTaskClient(String client) {
         this.client = client;
     }
 
-    public float getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 

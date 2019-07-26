@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -10,26 +12,30 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvNameClient"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:text="Name" />
-
-        <TextView
-            android:id="@+id/tvStatusClient"
+            android:id = "@+id/tvNameTask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-
-            android:text="Status" />
+            android:gravity="center"
+            android:text="Name"
+            />
 
         <TextView
-            android:id="@+id/tvIDClient"
-            android:layout_width="match_parent"
+            android:id = "@+id/tvTypeTask"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Type"
+            />
 
-            android:text="ID" />
+        <TextView
+            android:id = "@+id/tvIDTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ID"
+            />
+
     </LinearLayout>
 
 </LinearLayout>

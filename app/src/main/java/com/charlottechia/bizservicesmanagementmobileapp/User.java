@@ -8,9 +8,10 @@ public class User  {
     private String email;
     private String username;
     private String password;
-    private  String role;
+    private String role;
+    private Boolean status;
 
-    public User(String name, Integer id, Integer contact, String email, String username, String password,String role) {
+    public User(String name, Integer id, Integer contact, String email, String username, String password,String role, Boolean status) {
         this.name = name;
         this.id = id;
         this.contact = contact;
@@ -18,6 +19,15 @@ public class User  {
         this.username = username;
         this.password = password;
         this.role = role;
+        this.status = status;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 
     public String getUserName() {

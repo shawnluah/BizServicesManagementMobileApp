@@ -3,20 +3,20 @@ package com.charlottechia.bizservicesmanagementmobileapp;
 import java.util.Date;
 
 public class Client {
-    private int id;
+    private Integer id;
     private String name;
-    private int contact;
+    private Integer contact;
     private String email;
     private String contactPerson;
     private String secretary;
-    private Date endDate;
+    private String endDate;
     private String director1;
     private String director2;
     private String director3;
     private String shareholder1;
     private String shareholder2;
 
-    public Client(int id, String name, int contact, String email, String contactPerson, String secretary, Date endDate, String director1, String director2, String director3, String shareholder1, String shareholder2) {
+    public Client(Integer id, String name, Integer contact, String email, String contactPerson, String secretary, String endDate, String director1, String director2, String director3, String shareholder1, String shareholder2) {
         this.id = id;
         this.name = name;
         this.contact = contact;
@@ -31,99 +31,117 @@ public class Client {
         this.shareholder2 = shareholder2;
     }
 
-    public int getId() {
+    public Integer getClientId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setClientId(int id) {
         this.id = id;
     }
 
-    public String getName() {
+    public String getClientName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setClientName(String name) {
         this.name = name;
     }
 
-    public int getContact() {
+    public Integer getClientContact() {
         return contact;
     }
 
-    public void setContact(int contact) {
+    public void setClientContact(int contact) {
         this.contact = contact;
     }
 
-    public String getEmail() {
+    public String getClientEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setClientEmail(String email) {
         this.email = email;
     }
 
-    public String getContactPerson() {
+    public String getClientContactPerson() {
         return contactPerson;
     }
 
-    public void setContactPerson(String contactPerson) {
+    public void setClientContactPerson(String contactPerson) {
         this.contactPerson = contactPerson;
     }
 
-    public String getSecretary() {
+    public String getClientSecretary() {
         return secretary;
     }
 
-    public void setSecretary(String secretary) {
+    public void setClientSecretary(String secretary) {
         this.secretary = secretary;
     }
 
-    public Date getEndDate() {
+    public String getClientEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setClientEndDate(String endDate) {
         this.endDate = endDate;
     }
 
-    public String getDirector1() {
+    public String getClientDirector1() {
         return director1;
     }
 
-    public void setDirector1(String director1) {
+    public void setClientDirector1(String director1) {
         this.director1 = director1;
     }
 
-    public String getDirector2() {
+    public String getClientDirector2() {
         return director2;
     }
 
-    public void setDirector2(String director2) {
+    public void setClientDirector2(String director2) {
         this.director2 = director2;
     }
 
-    public String getDirector3() {
+    public String getClientDirector3() {
         return director3;
     }
 
-    public void setDirector3(String director3) {
+    public void setClientDirector3(String director3) {
         this.director3 = director3;
     }
 
-    public String getShareholder1() {
+    public String getClientShareholder1() {
         return shareholder1;
     }
 
-    public void setShareholder1(String shareholder1) {
+    public void setClientShareholder1(String shareholder1) {
         this.shareholder1 = shareholder1;
     }
 
-    public String getShareholder2() {
+    public String getClientShareholder2() {
         return shareholder2;
     }
 
-    public void setShareholder2(String shareholder2) {
+    public void setClientShareholder2(String shareholder2) {
         this.shareholder2 = shareholder2;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", contact=" + contact +
+                ", email='" + email + '\'' +
+                ", contactPerson='" + contactPerson + '\'' +
+                ", secretary='" + secretary + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", director1='" + director1 + '\'' +
+                ", director2='" + director2 + '\'' +
+                ", director3='" + director3 + '\'' +
+                ", shareholder1='" + shareholder1 + '\'' +
+                ", shareholder2='" + shareholder2 + '\'' +
+                '}';
     }
 }
