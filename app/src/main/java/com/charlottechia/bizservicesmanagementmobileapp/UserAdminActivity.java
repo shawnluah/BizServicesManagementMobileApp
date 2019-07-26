@@ -54,6 +54,8 @@ public class UserAdminActivity extends AppCompatActivity {
 
 //jiji
 
+        String a = "";
+
     }
 
     @Override
