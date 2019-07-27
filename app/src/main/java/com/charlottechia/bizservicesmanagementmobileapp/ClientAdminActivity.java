@@ -83,9 +83,9 @@ public class ClientAdminActivity extends AppCompatActivity {
                         String clientemail = jsonObj.getString("client_email");
                         String clientSecretary = jsonObj.getString("client_secretary");
                         String clientFinanceEndDate = jsonObj.getString("client_financial_end_date");
-                        String directory1 = jsonObj.getString("directory_1");
-                        String directory2 = jsonObj.getString("directory_2");
-                        String directory3 = jsonObj.getString("directory_3");
+                        String directory1 = jsonObj.getString("director_1");
+                        String directory2 = jsonObj.getString("director_2");
+                        String directory3 = jsonObj.getString("director_3");
                         String shareholder = jsonObj.getString("shareholder_1");
                         String shareholder2 = jsonObj.getString("shareholder_2");
                         String clientstatus = jsonObj.getString("client_status");

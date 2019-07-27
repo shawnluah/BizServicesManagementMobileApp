@@ -25,9 +25,9 @@ public class ClientAdapter extends ArrayAdapter<Client> {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.customclient, parent, false);
 
-        tvNameClient = rowView.findViewById(R.id.tvNameClient);
-        tvIDClient = rowView.findViewById(R.id.tvIDClient);
-        tvStatusClient = rowView.findViewById(R.id.tvStatusClient);
+        tvNameClient = (TextView) rowView.findViewById(R.id.tvNameClient);
+        tvIDClient = (TextView) rowView.findViewById(R.id.tvIDClient);
+        tvStatusClient = (TextView) rowView.findViewById(R.id.tvStatusClient);
 
 
         Client clients = alClient.get(position);

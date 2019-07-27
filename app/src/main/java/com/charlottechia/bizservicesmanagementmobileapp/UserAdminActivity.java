@@ -110,6 +110,13 @@ public class UserAdminActivity extends AppCompatActivity {
 //                        startActivity(i);
                     }
                 });
+
+                ivAddUser.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openCreateUser();
+                    }
+                });
             }//end onSuccess
         });
 
