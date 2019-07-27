@@ -119,6 +119,13 @@ public class TaskAdminActivity extends AppCompatActivity {
             }//end onSuccess
         });
 
+        ivAddTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreateTask();
+            }
+        });
+
     }//end onResume
     public void openCreateTask () {
         Intent intent  = new Intent(getBaseContext(), CreateTaskActivity.class);
