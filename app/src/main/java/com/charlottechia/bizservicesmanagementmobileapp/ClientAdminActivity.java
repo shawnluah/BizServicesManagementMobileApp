@@ -120,6 +120,12 @@ public class ClientAdminActivity extends AppCompatActivity {
             }//end onSuccess
         });
 
+        ivAddClient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreateClientPage();
+            }
+        });
     }//end onResume
     public void openEditClientPage () {
         Intent intent  = new Intent(getBaseContext(), EditClientActivity.class);
