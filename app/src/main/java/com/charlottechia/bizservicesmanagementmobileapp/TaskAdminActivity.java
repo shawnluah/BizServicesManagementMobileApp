@@ -79,6 +79,7 @@ public class TaskAdminActivity extends AppCompatActivity {
                         Double taskPercentLiason = jsonObj.getDouble("task_percent_lias_person");
                         String taskClient = jsonObj.getString("task_client");
                         Double taskPrice = jsonObj.getDouble("task_price");
+                        String taskDueDate = jsonObj.getString("task_due_date");
                         String taskComplete = jsonObj.getString("task_complete");
                         String taskBilled = jsonObj.getString("task_billed");
 
@@ -96,7 +97,7 @@ public class TaskAdminActivity extends AppCompatActivity {
                         } else {
                             completeBool = false;
                         }
-                        Task tasks = new Task(taskname, taskID, taskUserInCharge, taskPercentUIC, taskLiasonPerson, taskPercentLiason, taskClient, taskPrice, completeBool, taskType,taskBilledBool );
+                        Task tasks = new Task(taskname, taskID, taskUserInCharge, taskPercentUIC, taskLiasonPerson, taskPercentLiason, taskClient, taskPrice,taskDueDate, completeBool, taskType,taskBilledBool );
                         altasks.add(tasks);
                     }
 
@@ -110,10 +111,10 @@ public class TaskAdminActivity extends AppCompatActivity {
                 lvTask.setOnItemClickListener(new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-//                        Contact selectedContact = alContact.get(position);
-//                        Intent i = new Intent(MainActivity.this, ViewContactDetailsActivity.class);
-//                        i.putExtra("contact_id", selectedContact.getContactId());
-//                        startActivity(i);
+                        Task selectedClient = altasks.get(position);
+                        Intent i = new Intent(TaskAdminActivity.this, EditTaskActivity.class);
+                        i.putExtra("task_id", selectedClient.getTaskId());
+                        startActivity(i);
                     }
                 });
             }//end onSuccess

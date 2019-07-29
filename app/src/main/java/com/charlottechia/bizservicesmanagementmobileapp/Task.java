@@ -9,12 +9,13 @@ public class Task {
     private Double percentOfLiaison;
     private String client;
     private Double price;
+    private String duedate;
     private boolean complete;
     private String type;
     private boolean billed;
 
 
-    public Task(String name, Integer id, String userInCharge, Double percentOfUIC, String liaison, Double percentOfLiaison, String client, Double price, boolean complete, String type, Boolean billed) {
+    public Task(String name, Integer id, String userInCharge, Double percentOfUIC, String liaison, Double percentOfLiaison, String client, Double price,String duedate, boolean complete, String type, Boolean billed) {
         this.name = name;
         this.id = id;
         this.userInCharge = userInCharge;
@@ -23,6 +24,7 @@ public class Task {
         this.percentOfLiaison = percentOfLiaison;
         this.client = client;
         this.price = price;
+        this.duedate = duedate;
         this.complete = complete;
         this.type = type;
         this.billed = billed;
@@ -30,6 +32,14 @@ public class Task {
 
     public boolean isBilled() {
         return billed;
+    }
+
+    public String getDuedate() {
+        return duedate;
+    }
+
+    public void setDuedate(String duedate) {
+        this.duedate = duedate;
     }
 
     public void setBilled(boolean billed) {

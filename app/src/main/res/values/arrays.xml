@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="types">Accounting, Tax, Secretary, Consultant</string-array>
+    <string-array name="types">
+        <item>Accounting</item>
+        <item>Tax</item>
+        <item>Secretary</item>
+        <item>Consultant</item>
+
+    </string-array>
 </resources>

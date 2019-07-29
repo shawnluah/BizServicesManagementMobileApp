@@ -104,10 +104,10 @@ public class UserAdminActivity extends AppCompatActivity {
                 lvUser.setOnItemClickListener(new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-//                        Contact selectedContact = alContact.get(position);
-//                        Intent i = new Intent(MainActivity.this, ViewContactDetailsActivity.class);
-//                        i.putExtra("contact_id", selectedContact.getContactId());
-//                        startActivity(i);
+                        User selectedUser = alusers.get(position);
+                        Intent i = new Intent(UserAdminActivity.this, EditUserActivity.class);
+                        i.putExtra("user_id", selectedUser.getUserId());
+                        startActivity(i);
                     }
                 });
 

@@ -56,34 +56,6 @@
         android:layout_marginBottom="25dp">
 
         <TextView
-            android:id="@+id/tvIDCreateCreateUser"
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ID"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/etIDCreateCreateUser"
-            android:layout_width="175dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:background="@drawable/rounded_et"
-            android:ems="10"
-            android:hint=" ID"
-            android:inputType="textPersonName"
-            android:textColor="@color/white" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="25dp">
-
-        <TextView
             android:id="@+id/tvContactCreateCreateUser"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
@@ -213,7 +185,8 @@
                 android:layout_weight="1"
                 android:text="Staff"
                 android:textColor="@color/white"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:checked="true"/>
 
             <RadioButton
                 android:id="@+id/rbAdminCreateCreateUser"
@@ -236,7 +209,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/red"
+            android:background="@drawable/rounded_button"
             android:text="Delete"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -248,6 +221,7 @@
             android:layout_weight="1"
             android:text="Save"
             android:textSize="18sp"
+            android:textColor="@color/white"
             android:theme="@style/MyButton" />
 
         <Button
@@ -257,6 +231,7 @@
             android:layout_weight="1"
             android:text="@android:string/cancel"
             android:textSize="18sp"
+            android:textColor="@color/white"
             android:theme="@style/MyButton" />
     </LinearLayout>
 

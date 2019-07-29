@@ -283,16 +283,6 @@
                 android:inputType="textPersonName"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
-                android:id="@+id/etShareholder3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_et"
-                android:ems="10"
-                android:hint=" Shareholder 3"
-                android:inputType="textPersonName"
-                android:layout_marginRight="20dp"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -18,7 +18,7 @@ import cz.msebera.android.httpclient.entity.mime.Header;
 
 public class CreateClientActivity extends AppCompatActivity {
 
-    EditText etClientName, etClientContact, etClientEmail, etContactPerson, etSecretary, etFYED, etDirector1, etDirector2, etDirector3, etShareHolder1, etShareHolder2, etShareHolder3;
+    EditText etClientName, etClientContact, etClientEmail, etContactPerson, etSecretary, etFYED, etDirector1, etDirector2, etDirector3, etShareHolder1, etShareHolder2;
     Button btnSaveClient, btnCancelSaveClient;
     private AsyncHttpClient client;
 
@@ -38,7 +38,7 @@ public class CreateClientActivity extends AppCompatActivity {
         etDirector3 = findViewById(R.id.etDirector3);
         etShareHolder1 = findViewById(R.id.etShareholder1);
         etShareHolder2 = findViewById(R.id.etShareholder2);
-        etShareHolder3 = findViewById(R.id.etShareholder3);
+
         btnSaveClient = findViewById(R.id.btnSaveCreateCreateUser);
         btnCancelSaveClient = findViewById(R.id.btnCancelCreateCreateUser);
 
@@ -58,9 +58,9 @@ public class CreateClientActivity extends AppCompatActivity {
                 String director3 = etDirector3.getText().toString();
                 String shareholder1 = etShareHolder1.getText().toString();
                 String shareholder2 = etShareHolder2.getText().toString();
-                String shareholder3 = etShareHolder3.getText().toString();
 
-                if (clientName.length() == 0 || clientContact.length() == 0 || clientEmail.length() == 0 || contactPerson.length() == 0 || secretary.length() == 0|| fyed.length() == 0 || director1.length() == 0 || director2.length() == 0 || director3.length() == 0 || shareholder1.length() == 0 || shareholder2.length() == 0  || shareholder3.length() == 0 ) {
+
+                if (clientName.length() == 0 || clientContact.length() == 0 || clientEmail.length() == 0 || contactPerson.length() == 0 || secretary.length() == 0|| fyed.length() == 0 || director1.length() == 0 || director2.length() == 0 || director3.length() == 0 || shareholder1.length() == 0 || shareholder2.length() == 0) {
 
                     Toast.makeText(getBaseContext(), "Fields cannot be empty", Toast.LENGTH_LONG).show();
                 } else {

@@ -20,11 +20,12 @@ import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.entity.mime.Header;
 
-public class CreateTaskActivity extends AppCompatActivity  {
+public class CreateTaskActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     EditText etTaskName, etUIC, etUICPercent, etLiaison, etPercentLP, etTaskClient, etPrice, etDueDate;
     Spinner spnType;
     Button btnSavetask, btnCancelTask;
+    String spinnerdata;
 
 
     private AsyncHttpClient client;
@@ -46,6 +47,11 @@ public class CreateTaskActivity extends AppCompatActivity  {
         btnSavetask = findViewById(R.id.btnSaveCreateCreateUser);
         btnCancelTask = findViewById(R.id.btnCancelCreateCreateUser);
 
+        ArrayAdapter<CharSequence> typeAdapter = ArrayAdapter.createFromResource(CreateTaskActivity.this, R.array.types, android.R.layout.simple_spinner_item);
+        typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spnType.setAdapter(typeAdapter);
+        spnType.setOnItemSelectedListener(CreateTaskActivity.this);
+
         btnSavetask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,10 +67,7 @@ public class CreateTaskActivity extends AppCompatActivity  {
                 String dueDate = etDueDate.getText().toString();
 
 
-//                ArrayAdapter<CharSequence> typeAdapter = ArrayAdapter.createFromResource(CreateTaskActivity.this, R.array.types, android.R.layout.simple_spinner_item);
-//                typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//                spnType.setAdapter(typeAdapter);
-//                spnType.setOnItemSelectedListener(CreateTaskActivity.this);
+
 
 
 
@@ -76,7 +79,7 @@ public class CreateTaskActivity extends AppCompatActivity  {
 
                     params.add("task_name", taskName);
 
-                    params.add("task_type", "Accounting");
+                    params.add("task_type", spinnerdata);
 
                     params.add("task_user_incharge", uic);
 
@@ -89,6 +92,8 @@ public class CreateTaskActivity extends AppCompatActivity  {
                     params.add("task_client", taskClient);
 
                     params.add("task_price", price);
+
+                    params.add("task_due_date", dueDate);
 
                     params.add("task_complete", "N");
 
@@ -128,14 +133,41 @@ public class CreateTaskActivity extends AppCompatActivity  {
 
     }
 
-//    @Override
-//    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//         spinnerTypeData = spnType.getSelectedItem().toString();
-//    }
-//
-//    @Override
-//    public void onNothingSelected(AdapterView<?> parent) {
-//
-//    }
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
+
+        switch (position) {
+            case 0:
+                if(spnType.getSelectedItemId() == 0) {
+                    spinnerdata = "Accounting";
+                };
+                break;
+            case 1:
+                if(spnType.getSelectedItemId() == 1) {
+                    spinnerdata = "Tax";
+                };
+                break;
+            case 2:
+                if(spnType.getSelectedItemId() == 2) {
+                    spinnerdata = "Secretary";
+                };
+                break;
+            case 3:
+                if(spnType.getSelectedItemId() == 3) {
+                    spinnerdata = "Consultant";
+                };
+
+                break;
+
+
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+        Toast.makeText(getBaseContext(), "Fields cannot be empty", Toast.LENGTH_LONG).show();
+
+    }
 
 }

@@ -57,13 +57,13 @@ public class CreateUserActivity extends AppCompatActivity {
                 final RadioButton radioRole = findViewById(selectedButtonid);
                 String radioRoleString = radioRole.getText().toString();
 
-                rgRole.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(RadioGroup group, int checkedId) {
-                        RadioButton checkedRadioButton = (RadioButton) findViewById(checkedId);
-
-                    }
-                });
+//                rgRole.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//                    @Override
+//                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+//                        RadioButton checkedRadioButton = (RadioButton) findViewById(checkedId);
+//
+//                    }
+//                });
                 if (name.length() == 0 || contact.length() == 0 || email.length() == 0 || username.length() == 0 || password.length() == 0) {
 
                     Toast.makeText(getBaseContext(), "Fields cannot be empty", Toast.LENGTH_LONG).show();

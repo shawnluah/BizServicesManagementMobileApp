@@ -12,6 +12,7 @@ import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -111,10 +112,10 @@ public class ClientAdminActivity extends AppCompatActivity {
                 lvClient.setOnItemClickListener(new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-//                        Contact selectedContact = alContact.get(position);
-//                        Intent i = new Intent(MainActivity.this, ViewContactDetailsActivity.class);
-//                        i.putExtra("contact_id", selectedContact.getContactId());
-//                        startActivity(i);
+                        Client selectedClient = alClients.get(position);
+                        Intent i = new Intent(ClientAdminActivity.this, EditClientActivity.class);
+                        i.putExtra("client_id", selectedClient.getClientId());
+                        startActivity(i);
                     }
                 });
             }//end onSuccess
