@@ -7,11 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class UserAdapter extends ArrayAdapter<User> {
 
@@ -25,6 +27,11 @@ public class UserAdapter extends ArrayAdapter<User> {
         alUser = objects;
         this.context = context;
     }
+//    public void update(ArrayList<User> results) {
+//        alUser = new ArrayList<>();
+//        alUser.addAll(results);
+//        notifyDataSetChanged(); // indicates android that the user listview need to be refreshed and the listview gets refresh immediately with the current arraylist
+//    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -53,8 +60,23 @@ public class UserAdapter extends ArrayAdapter<User> {
 
     }
 
+//    public ArrayList<User> getData () {
+//        return alUser;
+//    }
 
-
-
+//    public void filter(String charText) {
+//        charText = charText.toLowerCase(Locale.getDefault());
+//        alUser.clear();
+//        if (charText.length() == 0) {
+//            alUser.addAll(alUser);
+//        } else {
+//            for (User users : alUser) {
+//                if (users.getUserName().toLowerCase(Locale.getDefault()).contains(charText)) {
+//                    alUser.add(users);
+//                }
+//            }
+//        }
+//        notifyDataSetChanged();
+//    }
 
 }

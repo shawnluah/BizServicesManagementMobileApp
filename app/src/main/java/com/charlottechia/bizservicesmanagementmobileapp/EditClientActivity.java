@@ -48,10 +48,12 @@ public class EditClientActivity extends AppCompatActivity {
         Intent intent = getIntent();
         clientId = intent.getIntExtra("client_id", -1);
 
+
         client = new AsyncHttpClient();
 
         RequestParams params = new RequestParams();
         params.add("client_id", String.valueOf(clientId));
+
 
         client.get("http://10.0.2.2/FYP/getClientById.php", params, new JsonHttpResponseHandler() {
 

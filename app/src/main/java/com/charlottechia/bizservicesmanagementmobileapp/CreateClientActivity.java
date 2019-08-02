@@ -66,6 +66,7 @@ public class CreateClientActivity extends AppCompatActivity {
                 } else {
                     RequestParams params = new RequestParams();
 
+
                     params.add("client_name", clientName);
 
                     params.add("client_contact_person", contactPerson);

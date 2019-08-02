@@ -3,7 +3,10 @@ package com.charlottechia.bizservicesmanagementmobileapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -132,8 +135,39 @@ public class TaskAdminActivity extends AppCompatActivity {
         Intent intent  = new Intent(getBaseContext(), CreateTaskActivity.class);
         startActivity(intent);
     }
-    public void openEditTask () {
-        Intent intent  = new Intent(getBaseContext(), EditTaskActivity.class);
-        startActivity(intent);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.my_menu, menu); // inflate my menu.xml and display it in application
+
+        MenuItem menuItem = menu.findItem(R.id.searchMenu);
+        android.support.v7.widget.SearchView searchView = (android.support.v7.widget.SearchView) menuItem.getActionView();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) { // will gets called with every new input String in the search view
+//                ArrayList<User> results = new ArrayList<>();
+//
+//                for(User x: alusers) {
+//
+//                    Log.i("aluserdata" ,x.toString());
+//                    if (x.getUserName().contains(newText)) {
+//
+//                        results.add(x);
+//                    }
+//
+//                }
+//                ((UserAdapter)lvUser.getAdapter()).update(results); // to refresh the listview
+
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 }

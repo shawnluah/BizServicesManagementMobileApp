@@ -19,6 +19,11 @@ public class ClientAdapter extends ArrayAdapter<Client> {
         alClient = objects;
         this.context = context;
     }
+    public void update(ArrayList<Client> results) {
+        alClient = new ArrayList<>();
+        alClient.addAll(results);
+        notifyDataSetChanged(); // indicates android that the user listview need to be refreshed and the listview gets refresh immediately with the current arraylist
+    }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
