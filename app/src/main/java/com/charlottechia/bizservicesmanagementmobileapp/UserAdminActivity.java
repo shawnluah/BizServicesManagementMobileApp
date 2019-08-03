@@ -181,32 +181,32 @@ public class UserAdminActivity extends AppCompatActivity {
 //                }
                 
 
-//                ArrayList<User> results = new ArrayList<>();
+                ArrayList<User> results = new ArrayList<>();
+
+                for (int i=0; i<alusers.size(); i++) {
+                    User x = alusers.get(i);
+
+                    results.add(x);
+
+
+                }
+
+
+                newText = newText.toLowerCase(Locale.getDefault());
+                alusers.clear();
+
+                if (newText.length() == 0) {
+                    alusers.addAll(results);
+                } else {
+                    for (User users : results) {
+                        if (users.getUserName().toLowerCase(Locale.getDefault()).contains(newText)) {
+                            alusers.add(users);
+                        }
+                    }
+                }
 //
-//                for (int i=0; i<alusers.size(); i++) {
-//                    User x = alusers.get(i);
-//
-//                    results.add(x);
-//
-//
-//                }
-//
-//
-//                newText = newText.toLowerCase(Locale.getDefault());
-//                alusers.clear();
-//
-//                if (newText.length() == 0) {
-//                    alusers.addAll(results);
-//                } else {
-//                    for (User users : results) {
-//                        if (users.getUserName().toLowerCase(Locale.getDefault()).contains(newText)) {
-//                            alusers.add(users);
-//                        }
-//                    }
-//                }
-//
+//                aa.getFilter().filter(newText);
                 aa.notifyDataSetChanged();
-                aa.getFilter().filter(newText);
 
 
                 return false;

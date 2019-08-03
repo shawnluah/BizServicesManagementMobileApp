@@ -43,7 +43,6 @@
             android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
-            android:ems="10"
             android:hint=" Name"
             android:inputType="textPersonName" />
     </LinearLayout>
@@ -70,7 +69,6 @@
             android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_et"
-            android:ems="10"
             android:hint=" Contact Number"
             android:inputType="phone" />
     </LinearLayout>
